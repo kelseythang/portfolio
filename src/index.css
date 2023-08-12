@@ -1,0 +1,10 @@
+.icons {
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icons:hover {
+  color: #29b6f6;
+}
+

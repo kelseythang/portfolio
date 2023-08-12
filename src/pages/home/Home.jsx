@@ -1,6 +1,7 @@
-import { Box, Button, Container, Stack, Typography } from '@mui/material';
+import { Box, Button, Container, Stack, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { useMediaQuery } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
+import SaveIcon from '@mui/icons-material/SaveAlt';
 import ReactIcon from './ReactIcon';
 import RailsIcon from './RailsIcon';
 import MUIIcon from './MUIIcon';
@@ -35,8 +36,8 @@ const Home = () => {
         Thank-you for reviewing my portfolio and feel free to contact me with questions and new opportunities!
       </Typography>
       <Box mt={2}>
-        <Button variant='contained' color='secondary' sx={{ mr: 2 }}>Connect</Button>
-        <Button variant='outlined' color='secondary'>resume</Button>
+        <Button variant='contained' color='secondary' sx={{ mr: 2 }} startIcon={<SendIcon />}>Connect</Button>
+        <Button variant='outlined' color='secondary' startIcon={<SaveIcon />}>Resume</Button>
       </Box>
     </Container>
   )
