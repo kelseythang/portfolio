@@ -31,7 +31,7 @@ const NavBar = () => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <List>
+      {/* <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
@@ -39,7 +39,10 @@ const NavBar = () => {
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
+      </List> */}
+      <IconButton onClick={toggleColorMode} sx={{ mt: 2 }}>
+        {theme.palette.mode === 'light' ? (<LightIcon fontSize='small' />) : (<DarkIcon fontSize='small' />)}
+      </IconButton>
     </Box>
   )
 
@@ -73,11 +76,11 @@ const NavBar = () => {
             Kelsey Thang
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>
-            {navItems.map((item) => (
+            {/* {navItems.map((item) => (
               <Button key={item}>
                 {item}
               </Button>
-            ))}
+            ))} */}
             <IconButton onClick={toggleColorMode} sx={{ ml: 1 }}>
               {theme.palette.mode === 'light' ? (<LightIcon fontSize='small' />) : (<DarkIcon fontSize='small' />)}
             </IconButton>
@@ -87,12 +90,11 @@ const NavBar = () => {
       </AppBar>
       <Box component='nav'>
         <Drawer
-          // container={container}
           variant='temporary'
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
