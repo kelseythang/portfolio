@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.d5810900.css","mappings":"AACA,OAGE,aAAc,CADd,oBAAqB,CADrB,gCAGF,CAEA,aACE,aACF","sources":["index.css"],"sourcesContent":["/* social icons */\n.icons {\n  transition: color 0.3s ease-in-out;\n  text-decoration: none;\n  color: inherit;\n}\n\n.icons:hover {\n  color: #29b6f6;\n}"],"names":[],"sourceRoot":""}
