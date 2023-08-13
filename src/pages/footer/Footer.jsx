@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <Container sx={{ display: 'flex', justifyContent: 'space-between', alignItems:'center', mb: 2 }}>
-      <Typography>© Kelsey Thang {!isMobile && '| Software Developer'}</Typography>
+      <Typography>© Kelsey Thang | Dev{!isMobile && 'eloper'}</Typography>
       <Box>
         <CustomIconButton link='https://github.com/kelseythang' button={<GitHubIcon className='icons' />} />
         <CustomIconButton link='https://www.linkedin.com/in/kelsey-thang/' button={<LinkedInIcon className='icons' />} />
