@@ -18,8 +18,8 @@ export const themeSettings = mode => {
           text: { primary: grey[700] },
           background: { default: '#fffefb' }
         } : {
-          primary: { main: '#757ce8' },
-          secondary: { main: '#ff7961' },
+          primary: { main: lightBlue[400] },
+          secondary: { main: '#E8E8E8' },
           neutral: {
             dark: grey[700],
             main: grey[500],
