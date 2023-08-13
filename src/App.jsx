@@ -3,6 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ColorModeContext, useMode } from './contexts/ThemeContext';
 import NavBar from './pages/navbar/NavBar';
 import Home from './pages/home/Home';
+import Projects from './pages/projects/Projects';
 import Footer from './pages/footer/Footer';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <CssBaseline />
         <NavBar />
         <Home />
+        <Projects />
         <Footer />
       </ThemeProvider>
     </ColorModeContext.Provider>
