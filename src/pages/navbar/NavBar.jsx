@@ -11,6 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useTheme } from '@mui/material/styles';
 import LightIcon from '@mui/icons-material/LightModeOutlined';
 import DarkIcon from '@mui/icons-material/DarkModeOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -23,7 +24,7 @@ const navItems = ['Home', 'Projects', 'Contact'];
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { toggleColorMode } = useContext(ColorModeContext);
-  const [theme] = useMode();
+  const theme = useTheme();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -41,7 +42,7 @@ const NavBar = () => {
         ))}
       </List> */}
       <IconButton onClick={toggleColorMode} sx={{ mt: 2 }}>
-        {theme.palette.mode === 'light' ? (<LightIcon fontSize='small' />) : (<DarkIcon fontSize='small' />)}
+        {theme.palette.mode === 'light' ? (<DarkIcon fontSize='small' />) : (<LightIcon fontSize='small' />)}
       </IconButton>
     </Box>
   )
@@ -82,7 +83,7 @@ const NavBar = () => {
               </Button>
             ))} */}
             <IconButton onClick={toggleColorMode} sx={{ ml: 1 }}>
-              {theme.palette.mode === 'light' ? (<LightIcon fontSize='small' />) : (<DarkIcon fontSize='small' />)}
+              {theme.palette.mode === 'light' ? (<DarkIcon fontSize='small' />) : (<LightIcon fontSize='small' />)}
             </IconButton>
             <CustomIconButton link='https://github.com/kelseythang' button={<GitHubIcon className='icons' />} />
           </Box>

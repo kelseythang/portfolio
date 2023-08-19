@@ -41,7 +41,7 @@ const ProjectCard = ({ image, title, description, skills, points, gitLink, demoL
               {description}
             </Typography>
             {points.map(point => (
-              <Typography variant='body2' color='secondary'><CheckIcon fontSize='small' key={point} /> {point}</Typography>
+              <Typography variant='body2' color='secondary' key={point}><CheckIcon fontSize='small' /> {point}</Typography>
             ))}
           </CardContent>
           <CardActions sx={{ ml: 1, my: 2 }}>
