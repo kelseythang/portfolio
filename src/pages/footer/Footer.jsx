@@ -7,7 +7,7 @@ const Footer = () => {
   const isMobile = useMediaQuery(theme => theme.breakpoints.down('sm'));
 
   return (
-    <Container sx={{ display: 'flex', justifyContent: 'space-between', alignItems:'center', mb: 2 }}>
+    <Container sx={{ display: 'flex', justifyContent: 'space-between', alignItems:'center', mt: 4, mb: 2 }}>
       <Typography>© Kelsey Thang | Dev{!isMobile && 'eloper'}</Typography>
       <Box>
         <CustomIconButton link='https://github.com/kelseythang' button={<GitHubIcon className='icons' />} />
