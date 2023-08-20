@@ -8,3 +8,20 @@
 .icons:hover {
   color: #29b6f6;
 }
+
+/* settings for projects image slide */
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
