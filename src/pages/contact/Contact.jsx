@@ -41,9 +41,9 @@ const Contact = () => {
 
   return (
     <Container component='form' maxWidth='sm' sx={{textAlign: 'left'}} onSubmit={handleSubmit}>
-      <Typography variant='h4' fontFamily='Anton' color='secondary' mt={2}>Contact</Typography>
+      <Typography variant='h4' fontFamily='Anton' color='secondary' mt={2}>Contact Me</Typography>
       <TextField
-        label='Name'
+        label='Your Name'
         variant='outlined'
         fullWidth
         margin='dense'
@@ -51,7 +51,7 @@ const Contact = () => {
         onChange={(e) => setName(e.target.value)}
       />
       <TextField
-        label='Email'
+        label='Your Email'
         variant='outlined'
         fullWidth
         margin='dense'
