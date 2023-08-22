@@ -3,6 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ColorModeContext, useMode } from './contexts/ThemeContext';
 import NavBar from './pages/navbar/NavBar';
 import Home from './pages/home/Home';
+import Skills from './pages/skills/Skills';
 import Projects from './pages/projects/Projects';
 import Footer from './pages/footer/Footer';
 import Contact from './pages/contact/Contact';
@@ -16,6 +17,7 @@ const App = () => {
         <CssBaseline />
         <NavBar />
         <Home />
+        <Skills />
         <Projects />
         <Contact />
         <Footer />

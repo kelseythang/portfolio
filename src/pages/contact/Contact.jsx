@@ -2,9 +2,9 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import SectionTitle from '../../components/SectionTitle';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -41,12 +41,12 @@ const Contact = () => {
 
   return (
     <Container component='form' maxWidth='sm' sx={{textAlign: 'left'}} onSubmit={handleSubmit}>
-      <Typography variant='h4' fontFamily='Anton' color='secondary' mt={2}>Contact Me</Typography>
+      <SectionTitle title='Contact Me' />
       <TextField
         label='Your Name'
         variant='outlined'
         fullWidth
-        margin='dense'
+        sx={{ mb: 0.5 }}
         value={name}
         onChange={(e) => setName(e.target.value)}
       />

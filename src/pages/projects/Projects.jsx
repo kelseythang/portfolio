@@ -1,12 +1,12 @@
-import React from 'react'
-import { Box, Container, Stack, Typography, useMediaQuery } from '@mui/material';
+import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
+import SectionTitle from '../../components/SectionTitle';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
     <Container maxWidth='lg'>
-      <Typography variant='h4' fontFamily='Anton' color='secondary' mb={2}>Projects</Typography>
+      <SectionTitle title='Projects' />
       <Grid container spacing={2}>
         <Grid xs={12} md={6}>
           <ProjectCard 
