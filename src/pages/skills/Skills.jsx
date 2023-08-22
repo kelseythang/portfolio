@@ -22,12 +22,12 @@ const Skills = () => {
         <Container sx={containerTheme}>
           <Typography variant='h5' color='secondary' sx={{ my: 1 }}>Front-End Development</Typography>
           <Grid container mt={2}>
-            <Grid xs={12} md={6}>
+            <Grid md={6}>
               <IndividualSkill skill='JavaScript' level='Intermediate' />
               <IndividualSkill skill='React' level='Intermediate' />
               <IndividualSkill skill='HTML' level='Intermediate' />
             </Grid>
-            <Grid xs={12} md={6}>
+            <Grid md={6}>
               <IndividualSkill skill='CSS' level='Intermediate' />
               <IndividualSkill skill='Material UI' level='Intermediate' />
             </Grid>
@@ -36,12 +36,12 @@ const Skills = () => {
         <Container sx={containerTheme}>
         <Typography variant='h5' color='secondary' sx={{ my: 1 }}>Back-End Development</Typography>
         <Grid container mt={2}>
-          <Grid xs={12} md={6}>
+          <Grid md={6}>
             <IndividualSkill skill='Ruby' level='Intermediate' />
             <IndividualSkill skill='Ruby on Rails' level='Intermediate' />
             <IndividualSkill skill='PostgreSQL' level='Intermediate' />
           </Grid>
-          <Grid xs={12} md={6}>
+          <Grid md={6}>
             <IndividualSkill skill='SQL' level='Basic' />
             <IndividualSkill skill='Python' level='Basic' />           
           </Grid>
