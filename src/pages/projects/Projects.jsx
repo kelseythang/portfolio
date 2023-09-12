@@ -11,6 +11,24 @@ const Projects = () => {
         <Grid xs={12} md={6}>
           <ProjectCard 
             images={[
+              'https://imgur.com/0rqrBzk.png',
+              'https://imgur.com/1XvBat1.png',
+              'https://imgur.com/F3LBRLT.png'
+            ]}
+            title='RTX Fitness'
+            description='Front-End UI fitness web application.'
+            skills={['JavaScript', 'React', 'MUI', 'Deployed']}
+            points={[
+              'Modern UI Design',
+              'Responsive and Mobile Friendly'
+            ]}
+            gitLink='https://github.com/kelseythang/rtx-fitness'
+            liveLink='kelseythang.github.io/rtx-fitness/'
+          />
+        </Grid>
+        <Grid xs={12} md={6}>
+          <ProjectCard 
+            images={[
               'https://imgur.com/iBKoUVz.png', 
               'https://imgur.com/emFs4Nm.png',
               'https://imgur.com/cHvPjMQ.png',
@@ -36,7 +54,7 @@ const Projects = () => {
               'https://imgur.com/g5CxDfP.png'
             ]}
             title='Discover Flats'
-            description='Apartment search application. '
+            description='Apartment search application.'
             skills={['JavaScript', 'React', 'Ruby', 'Ruby on Rails', 'MUI']}
             points={[
               'Users can create and login to an account via authentication',
